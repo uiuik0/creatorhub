@@ -1,0 +1,25 @@
+{
+  "schedule_id": "schedule_20261001030815",
+  "timestamp": "2026-10-01T03:11:42.176184",
+  "package": "/Users/a123/Desktop/新时代三件套-交付包-重制版",
+  "title": "新时代三件套：自媒体、AI、金融，为什么要一起做？",
+  "video": "/Users/a123/Desktop/新时代三件套-交付包-重制版/成片.mp4",
+  "results": {
+    "bilibili": {
+      "status": "success",
+      "platform": "bilibili",
+      "title": "新时代三件套：自媒体、AI、金融，2分钟画清个人增长循环",
+      "url": null
+    },
+    "douyin": {
+      "status": "success",
+      "platform": "douyin",
+      "title": "新时代三件套：自媒体、AI、金融，为什么要一起做？"
+    },
+    "xiaohongshu": {
+      "status": "error",
+      "platform": "xiaohongshu",
+      "error": "'NoneType' object is not callable"
+    }
+  }
+}

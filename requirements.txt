@@ -1,0 +1,23 @@
+# 核心依赖
+playwright>=1.40.0
+Pillow>=9.0.0
+pydantic>=1.10.0
+loguru>=0.7.0
+click>=8.0.0
+rich>=13.0.0
+
+# 定时任务
+APScheduler>=3.10.0
+
+# 小红书API
+xhs>=0.2.0
+
+# B站API（可选，如果安装失败可以先跳过）
+# bilibili-api>=9.0.0
+
+# 如果 bilibili-api 安装失败，可以手动安装它的依赖
+aiohttp>=3.8.0
+beautifulsoup4>=4.9.0
+lxml>=4.9.0
+PyYAML>=6.0
+urllib3>=1.26.0

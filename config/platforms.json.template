@@ -1,0 +1,61 @@
+# 配置模板 - platforms.json
+# 复制这个文件并填入你的真实凭证
+
+{
+  "bilibili": {
+    "enabled": true,
+    "name": "哔哩哔哩",
+
+    # 如何获取 cookies 和 csrf:
+    # 1. 登录 https://member.bilibili.com/
+    # 2. 打开浏览器开发者工具 (F12)
+    # 3. 切换到 Application > Cookies
+    # 4. 复制 SESSDATA 的值到下面的 cookies 字段
+    # 5. 复制 bili_jct 的值到下面的 csrf 字段
+
+    "cookies": "你的_SESSDATA_值",
+    "csrf": "你的_bili_jct_值",
+
+    "upload_endpoint": "https://member.bilibili.com/x/vu/web/add",
+    "video_zone": 124,
+    "copyright": 1,
+    "max_title_length": 80,
+    "max_desc_length": 2000,
+    "tags_limit": 12,
+    "cover_required": true
+  },
+
+  "douyin": {
+    "enabled": true,
+    "name": "抖音",
+
+    # 抖音使用浏览器自动化，第一次运行时需要手动登录
+    # 登录后会保持会话，无需每次都登录
+
+    "session_id": "",
+    "device_id": "",
+    "upload_url": "https://creator.douyin.com/",
+    "max_title_length": 55,
+    "max_desc_length": 2000,
+    "tags_limit": 5,
+    "cover_required": true,
+    "use_automation": true
+  },
+
+  "xiaohongshu": {
+    "enabled": true,
+    "name": "小红书",
+
+    # 小红书使用浏览器自动化，第一次运行时需要手动登录
+    # 登录后会保持会话
+
+    "token": "",
+    "device_id": "",
+    "upload_url": "https://creator.xiaohongshu.com/",
+    "max_title_length": 20,
+    "max_desc_length": 1000,
+    "tags_limit": 10,
+    "cover_required": true,
+    "use_automation": true
+  }
+}

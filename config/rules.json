@@ -1,0 +1,55 @@
+{
+  "title_rules": {
+    "remove_patterns": [
+      "交付包$",
+      "_\\d{4}-\\d{2}-\\d{2}$"
+    ],
+    "add_prefix": {
+      "bilibili": "",
+      "douyin": "",
+      "xiaohongshu": ""
+    },
+    "add_suffix": {
+      "bilibili": "",
+      "douyin": " #AI视频",
+      "xiaohongshu": ""
+    }
+  },
+  "description_templates": {
+    "bilibili": "这是一个关于{title}的视频。\n\n{original_desc}\n\n欢迎三连支持！",
+    "douyin": "{original_desc}\n\n{tags}",
+    "xiaohongshu": "{original_desc}\n\n{tags}"
+  },
+  "tag_generation": {
+    "auto_generate": true,
+    "default_tags": ["AI", "科技", "知识分享"],
+    "extract_from_filename": true,
+    "extract_from_description": true
+  },
+  "cover_selection": {
+    "priority": [
+      "cover.*",
+      "thumbnail.*",
+      "*preview*",
+      "*sticker*",
+      "成果/**/*.png",
+      "成果/**/*.jpg"
+    ],
+    "resize": {
+      "bilibili": [1920, 1080],
+      "douyin": [1080, 1920],
+      "xiaohongshu": [1080, 1080]
+    }
+  },
+  "video_processing": {
+    "check_duration": true,
+    "min_duration": 5,
+    "max_duration": {
+      "bilibili": 7200,
+      "douyin": 900,
+      "xiaohongshu": 900
+    },
+    "transcode_if_needed": true,
+    "target_format": "mp4"
+  }
+}
